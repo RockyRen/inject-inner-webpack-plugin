@@ -13,7 +13,7 @@ npm install --save-dev inject-inner-webpack-plugin
 ```js
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const InjectInnerWebpackPlugin = require('inject-inner-webpack-plugin');
-s
+
 module.exports = {
     entry: {
         index: './index.js',
@@ -60,6 +60,7 @@ This will generate a file `dist/index.html` containing the following
 ```
 
 `entry` in `webpack.config.js` shoule be Object.
+
 Only handle the HtmlWebpackPlugin instances which has `template` option.
 
 ## Options
@@ -81,6 +82,6 @@ Allowed values of the second parameter are as follows:
 |**`context`**|`{String}`|`Webpack Context`|If you use the relative path like `src/inner.js?__inline`, the path will relative to `context`|
 |**`isRemainBundle`**|`{Boolean}`|`false`|If `true` then remain the inner chunks to output|
 |**`scriptTag`**|`{Function}`|``|Custom inner content output|
-|**`template`**|`{String|Array}`|``|Specify which template shoule be injected|
+|**`template`**|`{String\|Array}`|``|Specify which template shoule be injected|
 
 
