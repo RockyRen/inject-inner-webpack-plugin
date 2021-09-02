@@ -1,6 +1,6 @@
 {
   "name": "inject-inner-webpack-plugin",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Webpack Plugin that injects inner script source to HTML files of the html-webpack-plugin output.",
   "main": "./lib/index.js",
   "author": "rockyren",
@@ -10,6 +10,7 @@
   "repository": "https://github.com/RockyRen/inject-inner-webpack-plugin.git",
   "devDependencies": {
     "html-webpack-plugin": "^5.3.2",
+    "jquery": "^3.6.0",
     "webpack": "^5.46.0"
   },
   "keywords": [
